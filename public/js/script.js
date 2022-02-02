@@ -104,7 +104,7 @@ $(".btn-edit").click(function(){
 
 ///////////////////FECHA CONTAINERS ////////////////////////
 $(".fa-xmark").click(function(){
-	$(".container-black").addClass("d-none")
+	$(".container-black, .container-login").addClass("d-none")
 })
 
 
