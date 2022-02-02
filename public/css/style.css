@@ -1,0 +1,550 @@
+a, a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.entrar-link{
+	background: green;
+	color: white;
+	border-radius: 12px 2px 12px 2px;
+	width: 75px;
+}
+
+.entrar-link:hover{
+	background: linear-gradient(45deg, limegreen, green);
+	color: white;
+	border-radius: 12px 2px 12px 2px;
+	width: 75px;
+}
+
+.sair-link{
+	background: red;
+	color: white;
+	border-radius: 12px 2px 12px 2px;
+	width: 75px;
+}
+
+.sair-link:hover{
+	background: firebrick;
+	color: white;
+	border-radius: 12px 2px 12px 2px;
+	width: 75px;
+}
+
+
+.parallax{
+/* Defina uma altura para a visão que o usuário terá da imagem */
+min-height: 500px;
+ 
+/* defina o background como fixo e posicione a imagem */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.parallaxTemplate1 {
+background-image: url("/img/image-esg.jpg");
+}
+
+.parallaxTemplate2 {
+background-image: url("/img/tech-ambiente.jpg");
+}
+
+.parallaxTemplate3 {
+background-image: url("/img/tech-social.jpg");
+}
+
+.form-contact input, .form-contact textarea{
+	border: 1px solid grey;
+	padding: 5px;
+	width: 80%;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+.container-entrar input{
+	border-top: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-bottom: 1px solid grey;
+}
+
+.nav-painel a{
+	padding: 10px 25px 10px 25px;
+	border-radius: 5px;
+	color: green;
+}
+
+.nav-painel a:hover, .dropdown-toggle:hover{
+	/*color: green;
+	border-bottom: 5px solid green;
+	max-width: 200px;*/
+	background: rgba(0, 128, 0, 0.2);
+	border-bottom: 5px solid green;
+}
+
+.btn-ger-var:hover{
+	background: seagreen;
+}
+
+
+
+.active{
+	color: green;
+	border-bottom: 5px solid green;
+	background-color: white;
+}
+
+.navbar-index{
+	border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.row-vantages .col{
+	border: 1px solid rgba(211, 211, 211, 0.7);
+	border-radius: 20px;
+	margin: 10px;
+	padding: 10px;
+	opacity: 0;
+}
+
+/* ANIMACOES */
+
+@keyframes rotate{
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes rotateMet{
+	100%{
+		transform: rotateY(180deg);
+	}
+}
+
+@keyframes pulo{
+	100%{
+		opacity: 1;
+		margin-right: 5px;
+	}
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes panoramaL {
+	from{
+		opacity: 0;
+		margin-left: -200px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 0px;
+	}
+	
+}
+
+@keyframes panoramaRef {
+	from{
+		opacity: 0;
+		margin-left: -400px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 0px;
+	}
+	
+}
+
+@keyframes panoramaR {
+	from{
+		opacity: 0;
+		margin-right: -200px;
+	}
+	to{
+		opacity: 1;
+		margin-right: 0px;
+	}
+	
+}
+
+@keyframes panoramaRight {
+	from{
+		opacity: 0;
+		margin-left: 20%;
+	}
+	to{
+		opacity: 1;
+		margin-left: 0px;
+	}
+	
+}
+
+@keyframes ascenderT {
+	from{
+		opacity: 0;
+		margin-top: -100px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+	
+}
+
+@keyframes ascenderB{
+	from {
+		opacity: 0;
+		margin-top: 100px;
+	}
+
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+@keyframes right{
+	from{
+		margin-left: 0px;
+	}
+	to{
+		margin-left: 2px;
+	}
+}
+
+@keyframes top {
+	from{
+		margin-top: 0px;
+	}
+}
+
+@keyframes topdivs{
+
+	to{
+		transform: scale(1);
+	}
+}
+
+@keyframes girar{
+	to{
+		transform: rotate(-360deg);
+	}
+}
+
+
+
+@keyframes scaleY{
+	from{
+		opacity: 0.5;
+		transform: scaleY(0.5);
+	}
+
+	to{
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+
+@keyframes scaleX{
+	from{
+		opacity: 0.5;
+		transform: scaleX(0.5);
+	}
+
+	to{
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+@keyframes topAnimate{
+	to{
+		margin-top: 0;
+	}
+}
+
+.div-usuario, .div-modal{
+	animation: scale 0.5s 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.fa-rotate-left:hover{
+	animation: girar 3s infinite;
+}
+
+.image-intro1, .image-intro2, .image-intro3, .image-intro4, .graph-1, .graph-2, .economy{
+	opacity: 0;
+}
+
+.colu-1, .colu-2, .colu-3, .colu-4, .colu-5, .colu-6, .colu-7, .img-rec, .mod-ef, .mod-inf{
+	opacity: 0;
+}
+
+.img-rec{	
+	animation: panoramaL 6s 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: 3s;
+}
+
+.table-fontes-gerais, .div-fontes-estab, .table-animate{
+	animation: fade 1s 1;
+	-webkit-animation-fill-mode: forwards;
+
+}
+
+.section{
+	animation: fade 2s 1;
+}
+
+.recursos-energeticos-row p i{
+	animation: rotate 3s infinite;
+}
+
+/*
+.row-vantages .col i{
+	animation: rotate 5s 1;
+}
+*/
+.btn-ver-sistema:hover{
+	animation: pulo 0.5s infinite;
+}
+
+.nav-painel{
+	font-size: 13.5px;
+}
+
+td{
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.tr-1{
+	background-color: rgb(79, 79, 79);
+	color: white;
+}
+
+.tr-3{
+	background: silver;
+}
+
+.btn-gray, .bg-gray{
+	background: gray;
+	color: white;
+}
+
+.btn-gray:hover{
+	background: gray;
+	color: white;
+	opacity: 0.9;
+}
+
+.btn-gray-animate{
+	background: gray;
+	color: white;
+}
+
+.btn-gray-animate:hover{
+	background: silver;
+	color: black;
+}
+
+td i{
+	cursor: pointer;
+}
+
+.container-black{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.div-usuario input, .div-usuario select{
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	border: 1px solid lightgray;
+}
+
+.btn-success-light, .bg-success-light{
+	background-color: limegreen;
+	color: white;
+}
+
+.text-success-light{
+	color: limegreen;
+}
+
+.btn-success-light:hover{
+	opacity: 0.8;
+	color: white;
+}
+
+.sucess-light{
+	background-color: limegreen;
+}
+
+.fa-circle-xmark:hover{
+	color: red;
+}
+
+select, option{
+	cursor: pointer;
+}
+
+.fa-eye, .fa-eye-slash{
+	cursor: pointer;
+}
+
+h1{
+	color: seagreen;
+}
+
+.tooltip-success{
+	--balloon-color: green;
+}
+
+.tooltip-warning{
+	--balloon-color: gold;
+}
+
+.table-animate td input{
+	width: 80px;
+}
+
+.custom-input input, .custom-input textarea, .custom-input select{
+	outline: none;
+	border: 1px solid gainsboro;
+	background: white;
+	border-radius: 5px;
+}
+
+.custom-input input:focus{
+	border: 1px solid silver;
+}
+
+.custom-input input::placeholder{
+	color: silver;
+}
+
+.search-indexes input{
+	outline: none;
+	border: none;
+
+}
+
+.recursos-energeticos-row .col{
+	border: 1px solid lightgray;
+	min-width: 300px;
+}
+
+.btn-warning-light{
+	background-color: khaki;
+}
+
+.btn-warning-light:hover{
+	background-color: gold;
+}
+
+.row-ger-variaveis .col{
+	min-width: 300px;
+}
+
+.btn-drop-var{
+	color: limegreen;
+}
+
+.fa-xmark{
+	color: red;
+	font-size: 20px;
+	cursor: pointer; 
+	margin-left: 90%; 
+	margin-top: 20px
+}
+
+.text-gray{
+	color: gray;
+}
+
+.btn-silver{
+	background: silver;
+	color: black;
+}
+
+.btn-silver:hover{
+	background: silver;
+	color: black;
+	opacity: 0.9;
+}
+
+.text-darkgray{
+	color: darkgray;
+}
+
+.text-green{
+	color: green;
+}
+
+.edit-line{
+	color: #363636;
+}
+
+.bg-forestgreen{
+	background: forestgreen;
+}
+
+.bg-warning-light{
+	background: rgba(255, 215, 0, 0.5);
+}
+
+.bg-danger-light{
+	background: rgba(255, 0, 0, 0.5);
+}
+
+.text-warning-light{
+	color: rgba(255, 215, 0, 0.5);
+}
+
+.text-danger-light{
+	color: rgba(255, 0, 0, 0.5);
+}
+
+.btn-green{
+	background: green;
+	color: white;
+}
+
+.btn-green:hover{
+	background: green;
+	color: white;
+	opacity: 0.9;
+}
+
+.btn-gray-opp{
+	background: silver;
+	color: white;
+}
+
+.btn-gray-opp:hover{
+	background: gray;
+	color: white;
+}
+
+.img-principal img{
+	border-radius: 10px;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+	max-height: 600px;
+}
+
+.bg-light{
+	background: rgba(220, 220, 220, 0.7)!important;
+}
+

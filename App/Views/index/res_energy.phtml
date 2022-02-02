@@ -1,0 +1,161 @@
+<?php include("navbar.phtml") ?>
+
+
+<br><br>
+
+<section class="section">
+	<div class="text-center p-4 rounded-3 m-auto bg-light" style="width: 90%">
+	<h1 class="">
+		Recursos Energéticos
+	</h1>
+	<br>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio.
+	</p>
+	<div class="bg-white p-4 rounded-3 m-auto text-center">
+		<p class="text-start text-green"><b>Conheça nossos recursos energéticos</b></p>
+		<div class="row recursos-energeticos-row">
+			<div class="col m-3 p-3 rounded-3 bg-light colu-1">
+				<p class="text-success"><b><i class="fa-solid fa-dollar-sign"></i> Tributário</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>
+				<a href="/res_tributary" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-2">
+				<p class="text-success"><b><i class="fa-solid fa-lightbulb"></i> Iluminação</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				
+				<a href="/res_lighting" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-3">
+				<p class="text-success"><b><i class="fa-solid fa-temperature-empty"></i> Refrigeração</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				<a href="/res_refrigeration" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-4">
+				<p class="text-success"><b><i class="fa-solid fa-globe"></i> Automação</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				<a href="/res_automation" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-5">
+				<p class="text-success"><b><i class="fa-solid fa-sun"></i> Energia Solar</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				<a href="/res_solar_energy" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-6">
+				<p class="text-success"><b><i class="fa-solid fa-sliders"></i> Ajuste na demanda contratada</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				<a href="/res_demand_adjustment" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div class="col m-3 p-3 rounded-3 bg-light colu-7">
+				<p class="text-success"><b><i class="fa-solid fa-briefcase"></i> Ambiente de Contratação Livre</b></p>
+				<p>
+					Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum.
+				</p>	
+				<a href="/res_freecontract_environment" class="btn btn-gray-animate">Acessar <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+
+	</div>
+</div>
+</section>
+
+</body>
+
+<script>
+	$(window).on("scroll load9",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-1').outerHeight(); 
+		var eleTopo = $('.colu-1').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-1").css("animation", "fade 1.5s 1")
+			$(".colu-1").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load10",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-2').outerHeight(); 
+		var eleTopo = $('.colu-2').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-2").css("animation", "fade 1.5s 1")
+			$(".colu-2").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load11",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-3').outerHeight(); 
+		var eleTopo = $('.colu-3').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-3").css("animation", "fade 1.5s 1")
+			$(".colu-3").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load12",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-4').outerHeight(); 
+		var eleTopo = $('.colu-4').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-4").css("animation", "fade 1.5s 1")
+			$(".colu-4").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load13",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-5').outerHeight(); 
+		var eleTopo = $('.colu-5').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-5").css("animation", "fade 1.5s 1")
+			$(".colu-5").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load14",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-6').outerHeight(); 
+		var eleTopo = $('.colu-6').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-6").css("animation", "fade 1.5s 1")
+			$(".colu-6").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+	$(window).on("scroll load15",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.colu-7').outerHeight(); 
+		var eleTopo = $('.colu-7').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".colu-7").css("animation", "fade 1.5s 1")
+			$(".colu-7").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+</script>

@@ -1,0 +1,369 @@
+<?php include("navbar.phtml") ?>
+
+
+<br><br>
+
+<section class="section">
+	<div class="text-center p-4 rounded-3 m-auto bg-light" style="width: 90%">
+		<div class="row">
+			<div class="col">
+				<div class="float-start">
+					<button class="btn btn-green btn-add-indexes">
+						Adicionar Índice <i class="fa-solid fa-plus"></i>
+					</button>
+					<br>
+					<button class="btn btn-success btn-edit-category" style="margin-top: 5px">
+						Editar Categoria <i class="fa-solid fa-pencil"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="rounded-pill bg-success search-indice p-1 custom-input" style="width: 230px;float: right">
+					<i class="fa-solid fa-magnifying-glass text-white"></i> 
+					<input type="text" name="" placeholder="Encontrar Índice" class="rounded-pill bg-white">
+				</div>
+			</div>
+		</div>
+		<br>
+	<h1 class="">
+		Índices das Premissas
+	</h1>
+	<br>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio. 
+	</p>
+
+		<div class="bg-gray p-4 rounded-3 m-auto custom-input">
+				<h5 class="text-start">Premissas Financeiras</h5>
+				<br>
+				<div class="row">
+						<div class="col fst-italic">
+							<i class="fa-solid fa-square text-white"></i>
+							Usuários do tipo comum pode editar
+						</div>
+						<div class="col fst-italic">
+							<i class="fa-solid fa-square text-warning-light"></i> Usuários do tipo Admin pode editar
+						</div>
+						<div class="col fst-italic">
+							<i class="fa-solid fa-square text-danger-light"></i> Linha não preenchida corretamente
+						</div>
+					</div>
+					<br>
+				<div class="bg-white p-4 rounded-3 m-auto text-dark" style="overflow-x: scroll; overflow-y: scroll">
+					
+					<br>
+					<table class="text-center m-auto w-75 table-prem-finan" style="opacity: 0">
+					<tr class="tr-1">
+						<td>
+							ID
+						</td>
+						<td>
+							Nome
+						</td>
+						<td>
+							Valor
+						</td>
+						<td>
+							Opções
+						</td>
+					</tr>
+					<tr class="tr-2">
+						<td>
+							2
+						</td>
+						<td>
+							Horas de Uso 0
+						</td>
+						<td>
+							00,00
+						</td>
+						<td>
+							<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+								<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+								<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+						</td>
+					</tr>
+
+					<tr class="bg-danger-light">
+						<td>
+							3
+						</td>
+						<td>
+							% Participação de Iluminação %
+						</td>
+						<td>
+							<input type="text" name="" placeholder="CADASTRE UM VALOR" disabled>
+						</td>
+						<td>
+							<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+								<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+								<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+						</td>
+					</tr>
+
+					<tr class="bg-warning-light">
+						<td>
+							2
+						</td>
+						<td>
+							Horas de Uso 0
+						</td>
+						<td>
+							00,00
+						</td>
+						<td>
+							<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+								<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+								<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+						</td>
+					</tr>
+				</table>
+				</div>
+				
+				<br>
+				<h5 class="text-start">Premissas Variáveis Recursos</h5>
+				<div class="bg-white p-4 rounded-3 m-auto text-dark" style="overflow-x: scroll; overflow-y: scroll">
+					<br>
+					<table class="text-center m-auto w-75 table-prem-var" style="opacity: 0">
+					<tr class="tr-1">
+						<td>
+							ID
+						</td>
+						<td>
+							Nome
+						</td>
+						<td>
+							Valor
+						</td>
+						<td>
+							Opções
+						</td>
+					</tr>
+					<tr class="bg-warning-light-light">
+						<td>
+							2
+						</td>
+						<td>
+							Horas de Uso 0
+						</td>
+						<td>
+							00,00
+						</td>
+						<td>
+							<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+								<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+								<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<BR>
+				<h5 class="text-start">Premissas Sociais</h5>
+				<div class="bg-white p-4 rounded-3 m-auto text-dark" style="overflow-x: scroll; overflow-y: scroll">
+					<br>
+					<table class="text-center m-auto w-75 table-prem-sociais" style="opacity: 0">
+					<tr class="tr-1">
+						<td>
+							ID
+						</td>
+						<td>
+							Nome
+						</td>
+						<td>
+							Valor
+						</td>
+						<td>
+							Opções
+						</td>
+					</tr>
+
+					<tr class="bg-white">
+						<td>
+							13
+						</td>
+						<td>
+							Horas de Uso 0
+						</td>
+						<td>
+							00,00
+						</td>
+						<td>
+							<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+								<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+								<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+						</td>
+					</tr>
+				</table>
+				</div>
+		<br>
+	</div>
+</section>
+
+
+<!-- CONTAINER ADD INDICE -->
+<div class="container-black container-add-indexes fixed-top w-100 h-100 d-none">
+	<div class="add-indexes custom-input bg-white w-75 m-auto text-center rounded-3 mt-4 p-2">
+		<i class="fa-solid fa-xmark" style="font-size: 30px; cursor: pointer; margin-left: 90%; margin-top: 20px"></i>
+		<h3 class="text-success">Adicionar Índice</h3>
+		<hr>
+		<br>
+		<form>
+			<div class="row">
+				<div class="col"> 
+					<span>Nome: </span>
+					<input type="text" name="email" placeholder="Exemplo: ICMS">
+				</div>
+				<div class="col"> 
+					<span>Valor: </span>
+					<input type="text" name="email" placeholder="Exemplo: 5.5%, 10.0, 20/20/20">
+				</div>
+			</div>
+			<img src="img/on.jpg" style="width: 30px"> Índice apenas para admin
+			<br><br>
+					
+					
+			<div class="row">
+				<div class="col"> 
+					<span>Fonte: </span>
+					<input type="text" name="email" placeholder="Exemplo: Empresa Geld">
+				</div>
+				<div class="col"> 
+					<select>
+						<option>Financeiras</option>
+						<option>Ambientais</option>
+						<option>Sociais</option>
+						<option>Variáveis Recursos</option>
+					</select>	
+				</div>
+				<div class="col"> 
+					<select>
+						<option>Numérico</option>
+						<option>Percentual</option>
+						<option>Data</option>
+						<option>Moeda R$</option>
+						<option>KWh</option>
+						<option>M³</option>
+						<option>Fórmula</option>
+						<option>Inteiro</option>
+					</select>	
+				</div>
+			</div>
+			<br>
+			<button class="btn btn-green btn-add-indexes-container">Adicionar</button>
+			<br><br>
+		</form>
+	</div>	
+</div>
+
+<!-- CONTAINER EDIT CATEGORY -->
+<div class="container-black container-edit-category fixed-top w-100 h-100 d-none">
+	<div class="custom-input div-usuario bg-white w-75 m-auto text-center rounded-3 mt-4 p-2">
+		<i class="fa-solid fa-xmark" style="font-size: 30px; cursor: pointer; margin-left: 90%; margin-top: 20px"></i>
+		<h3 class="text-success">Categorias</h3>	
+		<hr>		
+		<p>
+			As variáveis são classificadas por categorias, as quais são definidas e alteradas pelo administrador do sistema.
+		</p>
+
+		<div class="bg-light add-category p-4 w-75 m-auto rounded-3" style="max-height: 600px">
+			<h5 class="text-green">Adicionar Categoria</h5>
+			<BR>
+			<span>Nome: </span><input type="text" name="" placeholder="Categoria"> 
+			<button class="btn-green rounded-3" style="border: none">Adicionar +</button>
+		</div>
+		<br>
+		<div class="text-center m-auto w-75" style="overflow-x: scroll; overflow-y scroll">
+			<table class="text-center m-auto w-100">
+			<tr class="tr-1">
+				<td>
+					ID
+				</td>
+				<td>
+					Nome
+				</td>
+				<td>
+					Data Cadastro
+				</td>
+				<td>
+					Opções
+				</td>
+			</tr>
+			<tr class="tr-2">
+				<td>
+					2
+				</td>
+				<td>
+					Financeiras
+				</td>
+				<td>
+					00/00/00 00:00
+				</td>
+				<td>
+					<i class="fa-solid fa-pen text-success"></i>
+				</td>
+			</tr>
+
+			<tr class="tr-3">
+				<td>
+					1
+				</td>
+				<td>
+					Ambientais
+				</td>
+				<td>
+					00/00/00 00:00
+				</td>
+				<td>
+					<i class="fa-solid fa-pen text-success"></i>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<br><br>
+	</div>	
+</div>
+
+<script>
+	$(window).on("scroll load",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.table-prem-finan').outerHeight(); 
+		var eleTopo = $('.table-prem-finan').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".table-prem-finan").css("animation", "fade 1s 1")
+			$(".table-prem-finan").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+
+	$(window).on("scroll load1",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.table-prem-var').outerHeight(); 
+		var eleTopo = $('.table-prem-var').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".table-prem-var").css("animation", "fade 1s 1")
+			$(".table-prem-var").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+
+	$(window).on("scroll load2",function(){
+		var aparecer = 50; 
+		var eleHeight = $('.table-prem-sociais').outerHeight(); 
+		var eleTopo = $('.table-prem-sociais').offset().top; 
+		var scrlTopo = $(window).scrollTop(); 
+		var distance = eleTopo-scrlTopo; 
+		var altJanela = window.innerHeight; 
+		if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+			$(".table-prem-sociais").css("animation", "fade 1s 1")
+			$(".table-prem-sociais").css("-webkit-animation-fill-mode", "forwards")
+		}
+	})
+
+</script>

@@ -1,0 +1,144 @@
+<?php include("navbar.phtml") ?>
+
+<br><br>
+
+<section class="section">
+	<div class="p-4 rounded-3 m-auto bg-light container-admin" style="width: 90%">
+	<h1 class="text-center">
+		Administrador
+	</h1>
+		<p class="text-center"><b>Usuários</b></p>
+		<br>
+		<button class="btn btn-success btn-add" style="margin-left: 12.5%">Adicionar Usuário + </button>
+		<br><br>
+		<table class="text-center m-auto w-75">
+			<tr class="tr-1">
+				<td>
+					ID
+				</td>
+				<td>
+					Email
+				</td>
+				<td>
+					Tipo
+				</td>
+				<td>
+					Opções
+				</td>
+			</tr>
+			<tr class="tr-2">
+				<td>
+					2
+				</td>
+				<td>
+					teste@teste.com
+				</td>
+				<td>
+					test
+				</td>
+				<td>
+					<i class="fa-solid fa-user-pen editar"></i>
+					<i class="fa-solid fa-user-xmark delete text-danger ms-2"></i>
+				</td>
+			</tr>
+
+			<tr class="tr-3">
+				<td>
+					3
+				</td>
+				<td>
+					teste2@teste.com
+				</td>
+				<td>
+					test
+				</td>
+				<td>
+					<i class="fa-solid fa-user-pen editar"></i>
+					<i class="fa-solid fa-user-xmark delete text-danger ms-2"></i>
+				</td>
+			</tr>
+		</table>
+	</div>
+</section>
+
+<div class="container-black container-add d-none fixed-top w-100 h-100">
+	<div class="add-user bg-white w-75 m-auto text-center rounded-3 mt-4 p-2 custom-input">
+		<i class="fa-solid fa-xmark" style="font-size: 30px; cursor: pointer; margin-left: 90%; margin-top: 20px"></i>
+		<h3 class="text-success">Adicionar Usuário</h3>
+		<hr>
+		<br>
+		<form>
+			<i class="fa-solid fa-at"></i>
+			<input type="text" name="email" placeholder="Email" class="bg-light">
+
+			<i class="fa-solid fa-key ms-3"></i> <input type="password" name="senha" placeholder="Senha" class="bg-light password">
+			<i class="fa-regular fa-eye"></i>
+			<i class="fa-regular fa-eye-slash d-none"></i>
+			<br><br>
+			Tipo: <select class="bg-light">
+				<option>Admin</option>
+				<option>Comum</option>
+				<option>Teste</option>
+			</select>
+			<br><br>	
+			<p>Digite sua senha para confirmação: </p>
+			<input type="password" name="" class="bg-light">
+			<br><br>
+			<button class="btn btn-green ">Confirmar</button>
+			<br><br>
+		</form>
+	</div>	
+</div>
+
+<div class="container-black container-edit fixed-top w-100 h-100 d-none">
+	<div class="edit-user bg-white w-75 m-auto text-center rounded-3 mt-4 p-2 custom-input">
+		<i class="fa-solid fa-xmark" style="font-size: 30px; cursor: pointer; margin-left: 90%; margin-top: 20px"></i>
+		<h3 class="text-success">Editar Usuário</h3>
+		<hr>
+		<br>
+		<form>
+			<i class="fa-solid fa-at"></i>
+			<input type="text" name="email" placeholder="Email" class="bg-light" value="teste@teste.com">
+
+			<i class="fa-solid fa-key ms-3"></i> <input type="password" name="senha" placeholder="Senha" class="bg-light password"> <i class="fa-regular fa-eye"></i>
+			<i class="fa-regular fa-eye-slash d-none"></i>
+			<br><br>
+			Tipo: <select class="bg-light">
+				<option>Admin</option>
+				<option>Comum</option>
+				<option selected>Teste</option>
+			</select>
+			<br><br>	
+			<p>Digite sua senha para confirmação: </p>
+			<input type="password" name="" class="bg-light password-admin">
+			<br><br>
+			<button class="btn btn-green ">Confirmar</button>
+			<br><br>
+		</form>
+	</div>	
+</div>
+
+<div class="container-black container-delete fixed-top w-100 h-100 d-none">
+	<div class="delete-user bg-white w-75 m-auto text-center rounded-3 mt-4 p-2">
+		<i class="fa-solid fa-xmark" style=""></i>
+		<p>Tem certeza que deseja excluir o usuário teste@teste.com (esta ação será permanente)?</p>
+		<div class="row">
+			<div class="col">
+				<button class="btn btn-success">Cancelar</button>
+				<button class="btn btn-danger btn-delete-user">
+					Excluir
+				</button>
+			</div>
+		</div>
+		<br>
+		<div class="w-50 m-auto div-progress d-none">
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					
+				</div>
+			</div>
+		</div>
+		
+		<br>
+	</div>	
+</div>

@@ -1,0 +1,129 @@
+<?php include("navbar.phtml") ?>
+
+<br><br>
+
+<section class="section">
+	<div class="text-center p-4 rounded-3 m-auto bg-light" style="width: 90%">
+		<br>
+		<h1 class="">
+			Fontes Energéticas
+		</h1>
+		<br>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem elit, eleifend ac ullamcorper in, egestas nec nunc. Aenean quis tempus lorem. Nullam at sodales ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a rutrum libero. Ut arcu elit, hendrerit quis posuere quis, efficitur et odio. 
+		</p>
+
+		<div class="bg-white text-center p-4 rounded-3 m-auto" style="width: 90%">
+			<button class="btn btn-success w-50 btn-sort-down-gerais">Fontes Gerais <i class="fa-solid fa-sort-down"></i></button>
+			<button class="btn btn-success w-50 btn-sort-up-gerais d-none">Fontes Gerais <i class="fa-solid fa-sort-up"></i></button>
+			<br><br>
+			<div class="text-center table-2-cons m-auto table-fontes-gerais d-none" style="color: black; width: 90%; overflow-x: scroll; overflow-y: scroll">
+				<table class="m-auto">
+				<tr class="tr-1">
+					<td>ID</td>
+					<td>Nome</td>
+					<td>M³/GJ</td>
+					<td>Matriz Brasileira</td>
+					<td>Consumo KWh</td>
+					<td>M³</td>
+					<td>
+						Opções
+					</td>
+				</tr>
+				<tr class="bg-light">
+					<td>Biomassa</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+						<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+						<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+					</td>
+				</tr>
+
+				<tr class="bg-light">
+					<td>Carvão</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<input type="text" name="" value="000,00" disabled>
+					</td>
+					<td>
+						<i class="fa-solid fa-pen text-dark edit-line" title="Editar"></i>
+						<i class="fa-solid fa-floppy-disk ms-2 save-line-disabled" title="Salvar" style="color: lightgray"></i>
+						<i class="fa-solid fa-floppy-disk text-success ms-2 d-none save-line" title="Salvar"></i>
+					</td>
+				</tr>
+			</table>
+			</div>
+			
+
+			<hr>
+
+			<button class="btn btn-success w-50 btn-sort-down-est">Fontes de Estabelecimento <i class="fa-solid fa-sort-down"></i></button>
+			<button class="btn btn-success w-50 btn-sort-up-est d-none">Fontes de Estabelecimento <i class="fa-solid fa-sort-up"></i></button>
+			<br><br>
+			<div class="div-fontes-estab d-none">
+				<p>Seleciona e indique as fontes energéticas do estabelecimento</p>
+				<div class="bg-gray text-white text-start rounded-3 p-4">
+					<p><b>Biomassa</b></p>
+					<div class="row"> 
+						<div class="col">
+							<input type="checkbox" name="" class="input-mineirais"> Fonte usada pelo estabelecimento
+						</div>
+
+						<div class="col">
+							<span>Percentual de Uso: <span>
+								<input type="text" name="" class="text-mineirais"  disabled style="width: 80px">
+							</span></span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="bg-gray text-white text-start rounded-3 p-4">
+					<p><b>Carvão</b></p>
+					<div class="row"> 
+						<div class="col">
+							<input type="checkbox" name="" class="input-mineirais"> Fonte usada pelo estabelecimento
+						</div>
+
+						<div class="col">
+							<span>Percentual de Uso: <span>
+								<input type="text"  name="" class="text-mineirais" disabled style="width: 80px">
+							</span></span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-silver">Salvar Valores</button>	
+			</div>
+			
+		</div>
+	</div>
+</section>
+
